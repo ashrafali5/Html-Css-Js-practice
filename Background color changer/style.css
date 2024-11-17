@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  background-color: #12420a;
+  transition: all 0.3s ease;
+}
+h1 {
+  font-weight: 200;
+  color: #fff;
+}
+button {
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #fff;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #fff;
+  color: black;
+}
+button:active {
+  padding: 5px;
+  transition: 0.3s;
+}
