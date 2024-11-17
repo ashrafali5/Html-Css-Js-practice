@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #1eff00;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+/* blue-heart */
+.blue-heart {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+.blue-heart::before {
+  content: "";
+  background-color: aqua;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50px;
+  top: 0;
+}
+.blue-heart:after {
+  content: "";
+  background-color: aqua;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+/* green-hearn */
+
+.green-heart {
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: rotate(-45deg);
+  visibility: hidden;
+  cursor: pointer;
+}
+.green-heart::before {
+  content: "";
+  background-color: #1eff00;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+.green-heart::after {
+  content: "";
+  background-color: #1eff00;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+.green-heart.animation {
+  animation: pop 1s linear;
+  visibility: visible;
+}
+
+.heart.fill-color {
+  background-color: var(--main-color);
+}
+
+@keyframes pop {
+  100% {
+    transform: scale(5) rotate(-45deg);
+    opacity: 0;
+  }
+}
