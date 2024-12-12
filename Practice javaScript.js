@@ -24,7 +24,7 @@
 //   let fahrenheit = (Cel * 9) / 5 + 32;
 //   return fahrenheit;
 // }
-// document.write(Fconverter(5));
+// document.write(Fconverter(28));
 
 // Question 6: Find the Largest Number in an Array
 // function largestNumber(arr) {
@@ -152,3 +152,38 @@
 // counter.decrement();
 
 // Question 14: Filter an Array of Numbers
+// const filterEvenNumbers = (arr) => {
+//   return arr.filter((number) => {
+//     return number % 2 === 0;
+//   });
+// };
+// document.write(filterEvenNumbers([45, 55, 33, 563, 12, 43, 67, 78, 90, 34, 56]));
+
+// Question 15: Find the Maximum Number in an Array
+// const findMax = (arr) => {
+//   let largestNum = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > largestNum) {
+//       largestNum = arr[i];
+//     }
+//   }
+//   return largestNum;
+// };
+// document.write(findMax([45, 23, 63, 67, 23, 543, 42, 2321, 321]));
+
+// Question 15: Second Answer
+// const findMax = (arr) => {
+//   return Math.max(...arr);
+// };
+// document.write(
+//   findMax([34324647856, 3342345325, 256875434, 734523454533, 564523454])
+// );
+
+// Question 16: Reverse a String Alternative Mathod
+// const reversedString = (str) => {
+//   if (str.length <= 1) {
+//     return str;
+//   }
+//   return reversedString(str.slice(1)) + str[0];
+// };
+// document.write(reversedString("Hi i am Ashraf Ali"));
