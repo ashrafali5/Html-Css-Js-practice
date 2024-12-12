@@ -187,3 +187,9 @@
 //   return reversedString(str.slice(1)) + str[0];
 // };
 // document.write(reversedString("Hi i am Ashraf Ali"));
+
+// // Question 17: Remove Duplicate Values from an Array
+// const removeDuplicate = (arr) => {
+//   return [...new Set(arr)]; // or Array.from(new Set(arr));
+// };
+// document.write(removeDuplicate([5, 2, 5, 6, 6, 7, 2, 5, 6, 0, 5, 8, 9]));
