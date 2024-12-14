@@ -193,3 +193,50 @@
 //   return [...new Set(arr)]; // or Array.from(new Set(arr));
 // };
 // document.write(removeDuplicate([5, 2, 5, 6, 6, 7, 2, 5, 6, 0, 5, 8, 9]));
+
+// Question 18: Flatten an Array
+// const flattenArray = (arr) => {
+//   return arr.flat();
+// };
+// document.write(flattenArray([84, 54, [53, 65], [99, 93, 32]]));
+
+// Question 19: Count the Frequency of Elements in an Array
+// const countFrequency = (arr) => {
+//   let frequency = {};
+//   for (let item of arr) {
+//     if (frequency[item]) {
+//       frequency[item]++;
+//     } else {
+//       frequency[item] = 1;
+//     }
+//   }
+//   return frequency;
+// };
+// console.log(
+//   countFrequency([
+//     "apple",
+//     "mango",
+//     "orange",
+//     "apple",
+//     "banana",
+//     "mango",
+//     "banana",
+//     "papaya",
+//   ])
+// );
+
+// Question 20: Find the Second Largest Number in an Array
+// const secondLargestNumber = (arr) => {
+//   let largestNum = -Infinity;
+//   let secondLargestNum = -Infinity;
+//   for (let num of arr) {
+//     if (num > largestNum) {
+//       secondLargestNum = largestNum;
+//       largestNum = num;
+//     } else if (num > secondLargestNum && num !== largestNum) {
+//       secondLargestNum = num;
+//     }
+//   }
+//   return secondLargestNum;
+// };
+// document.write(secondLargestNumber([23, 43, 34, 234, 231, 145]));
