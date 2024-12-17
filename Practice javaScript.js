@@ -240,3 +240,59 @@
 //   return secondLargestNum;
 // };
 // document.write(secondLargestNumber([23, 43, 34, 234, 231, 145]));
+
+// Exercise 21: Calculate the Factorial of a Number
+// const factorial = (num) => {
+//   if (num === 0) {
+//     return 1;
+//   }
+//   return num * factorial(num - 1);
+// };
+// document.write(factorial(5));
+
+// Exercise 25: Sum of Array Elements
+// function sumArray(arr) {
+//   let a = arr[i];
+//   if (arr[i]) {
+//     return a + arr[i];
+//   }
+// }
+// document.write(sumArray([234, 234, 234, 213, 53]));
+
+// practice : - word counting
+// function lengthOfStr(string) {
+//   let count = 0;
+//   let str = string.split(" ");
+//   for (let length of str) {
+//     count++;
+//   }
+//   return count;
+// }
+// document.write(lengthOfStr("hellow world"));
+
+// Exercise 25: Sum of Array Elements
+// const sumArray = (arr) => {
+//   let counting = 0;
+//   for (i = 0; i < arr.length; i++) {
+//     counting += arr[i];
+//   }
+//   return counting;
+// };
+// document.write(sumArray([1, 3, 5, 7, 9]));
+
+// // Exercise 26: Convert a String to Uppercase
+// const toUpperCase = (str) => {
+//   return str.toUpperCase();
+// };
+// document.write(toUpperCase("hello world"));
+
+// Exercise 27: Find the Index of an Element in an Array
+// const findIndex = (arr, value) => {
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] === value) {
+//       return i;
+//     }
+//   } // loop through the array
+//   return -1;
+// };
+// document.write(findIndex([1, 2, 3, 4, 5], 5)); // Output: 4
