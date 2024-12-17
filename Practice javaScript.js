@@ -296,3 +296,13 @@
 //   return -1;
 // };
 // document.write(findIndex([1, 2, 3, 4, 5], 5)); // Output: 4
+
+// Exercise 28: Calculate the Average of an Array
+// function average(arr) {
+//   let sum = 0;
+//   for (i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum / arr.length;
+// }
+// document.write(average([1, 2, 3, 4]));
