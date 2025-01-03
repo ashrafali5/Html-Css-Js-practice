@@ -306,3 +306,25 @@
 //   return sum / arr.length;
 // }
 // document.write(average([1, 2, 3, 4]));
+
+// Exercise 29: Find the Minimum and Maximum of an Array
+// function minMax(arr) {
+//   let min = arr[0];
+//   let max = arr[0];
+//   for (i = 0; i < arr.length; i++) {
+//     if (max < arr[i]) {
+//       max = arr[i];
+//     }
+//     if (min > arr[i]) {
+//       min = arr[i];
+//     }
+//   }
+//   return { min: min, max: max };
+// }
+// console.log(minMax([34, 53, 52, 32, 64, 23]));
+
+// Exercise 30: Remove Duplicates from an Array
+// function removeDuplicate(arry) {
+//   return Array.from(new Set(arry));
+// }
+// document.write(removeDuplicate([233, 245, 23, 34, 34]));
