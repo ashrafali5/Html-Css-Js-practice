@@ -328,3 +328,64 @@
 //   return Array.from(new Set(arry));
 // }
 // document.write(removeDuplicate([233, 245, 23, 34, 34]));
+
+// Exercise 31: Merge Two Arrays and Remove Duplicates
+// function mrgAndRmvDupl(arr1, arr2) {
+//   let firstArray = arr1;
+//   let secondArray = arr2;
+//   let mergedArray = firstArray.concat(secondArray);
+//   let mrgAndRmvDupl = [...new Set(mergedArray)];
+//   return mrgAndRmvDupl;
+// }
+// document.write(mrgAndRmvDupl([23, 23, 24, 25], [65, 34, 23, 27, 25]));
+// console.log(mrgAndRmvDupl(["a", "b", "c", "d"], ["a", "c", "b", "e", "x"]));
+
+// Exercise 32: Count the Number of Vowels in a String
+// Alternative methode for this question
+
+// const countVowels = (str) => {
+//   let vowels = str.match(/[aeiouAEIOU]/g);
+//   return vowels ? vowels.length : 0;
+// };
+// document.write(countVowels("Hellow"));
+
+// Exercise 33: Reverse a String
+// function reversedString(str) {
+//   let reverseStr = str.split("").reverse().join("");
+//   return reverseStr;
+// }
+// document.write(reversedString("the king of the year"));
+
+// Exercise 34: Check if a String is a Palindrome
+// function isPalindrome(str) {
+//   let string = str.toLowerCase().replace(/\s+/g, "");
+//   let reversedStr = string.split("").reverse().join("");
+//   return string == reversedStr;
+// }
+// document.write(isPalindrome("AB BA"));
+
+// Exercise 35: Find the Second Largest Number in an Array
+// function secondLargestNumber(array) {
+//   let largest1 = -Infinity;
+//   let largest2 = -Infinity;
+//   for (let num of array) {
+//     if (num > largest1) {
+//       largest2 = largest1;
+//       largest1 = num;
+//     } else if (num > largest2 && num != largest1) {
+//       largest2;
+//     }
+//   }
+//   return largest2;
+// }
+// document.write(secondLargestNumber([34, 53, 62, 62, 634, 62, 67, 23, 5, 3]));
+
+// Alternative methode
+// function secondLargestNumber(arr) {
+//   let removedDuple = [...new Set(arr)];
+//   let uniqueArray = removedDuple.sort((a, b) => b - a); // this can convert arry numbers in decending order
+//   return uniqueArray;
+// }
+// document.write(secondLargestNumber([34, 64, 324, 654, 67, 23, 5, 347]));
+
+// Exercise 36: Find the Intersection of Two Arrays
