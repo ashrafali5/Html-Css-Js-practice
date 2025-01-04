@@ -389,3 +389,19 @@
 // document.write(secondLargestNumber([34, 64, 324, 654, 67, 23, 5, 347]));
 
 // Exercise 36: Find the Intersection of Two Arrays
+// function intersection(arry1, arry2) {
+//   let intersection = [];
+//   for (let element of arry1) {
+//     if (arry2.includes(element)) {
+//       if (!intersection.includes(element)) {
+//         intersection.push(element);
+//       }
+//     }
+//   }
+//   return intersection;
+// }
+
+// document.write(intersection([23, 34, 245], [23, 34, 234]));
+// document.write(intersection(["a", "b", "c"], ["e", "b", "c"]));
+
+// Exercise 37: Find the Maximum Subarray Sum
