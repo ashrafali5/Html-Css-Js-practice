@@ -404,4 +404,19 @@
 // document.write(intersection([23, 34, 245], [23, 34, 234]));
 // document.write(intersection(["a", "b", "c"], ["e", "b", "c"]));
 
-// Exercise 37: Find the Maximum Subarray Sum
+// Exercise 37: Find the Maximum Subarray Sum --Most-Imp-
+// function maxSubArray(arry) {
+//   let maxValueAt = -Infinity;
+//   let currentElementAt = 0;
+//   for (let i = 0; i < arry.length; i++) {
+//     currentElementAt = currentElementAt + arry[i];
+//     if (maxValueAt < currentElementAt) {
+//       maxValueAt = currentElementAt;
+//     }
+//     if (currentElementAt < 0) {
+//       currentElementAt = 0;
+//     }
+//   }
+//   return maxValueAt;
+// }
+// console.log(maxSubArray([3, 4, 5, 1, -3, 3, -5, 3]));
