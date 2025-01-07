@@ -420,3 +420,47 @@
 //   return maxValueAt;
 // }
 // console.log(maxSubArray([3, 4, 5, 1, -3, 3, -5, 3]));
+
+// Exercise 38: Merge Two Sorted Arrays //sorted means Nums in order
+
+// function mergeSortedArray(arr1, arr2) {
+//   let i = 0;
+//   let j = 0;
+//   let result = [];
+//   //   compare and merge elements
+//   while (i < arr1.length && j < arr2.length) {
+//     if (arr1[i] <= arr2[j]) {
+//       result.push(arr1[i]);
+//       i++;
+//     } else {
+//       result.push(arr2[j]);
+//       j++;
+//     }
+//   }
+//   //   add remaining elements from arr1
+//   while (i < arr1.length) {
+//     result.push(arr1[i]);
+//     i++;
+//   }
+//   //   add remaining elements from arr2
+//   while (j < arr2.length) {
+//     result.push(arr2[j]);
+//     j++;
+//   }
+//   return result;
+// }
+// console.log(mergeSortedArray([1, 3, 5,9,7], [2, 4, 6,7,8]));
+
+// Exercise 39: Find the Intersection of Two Arrays
+// function intersectionOfTwoArrays(arr1, arr2) {
+//   let intersectionArr = [];
+//   for (let element of arr1) {
+//     if (arr2.includes(element)) {
+//       if (!intersectionArr.includes(element)) {
+//         intersectionArr.push(element);
+//       }
+//     }
+//   }
+//   return intersectionArr;
+// }
+// console.log(intersectionOfTwoArrays([3, 42, 4, 23, 21], [3, 42, 5, 23, 56]));
